@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters {
         string(name: 'BRANCH_NAME', defaultValue: 'master', description: 'Branch name to build.')
-        string(name: 'REPO_URL', defaultValue: 'git@bitbucket.org:besafx-bitbucket/food-cloud.git', description: 'Repository GIT URL.')
+        string(name: 'REPO_URL', defaultValue: 'git@github.com:BESAFX/jasper-server.git', description: 'Repository GIT URL.')
         string(name: 'CREDENTIALS_ID', defaultValue: 'microzilla-git-id', description: 'Credentials id stored on Jenkins.')
         booleanParam(name: 'INIT_JASPER_SERVER', description: "Reinitialize Jasper Server from scratch.", defaultValue: false)
     }
